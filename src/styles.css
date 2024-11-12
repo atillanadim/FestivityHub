@@ -90,12 +90,14 @@ p{
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
   }
   
 
   
   .hero-content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #ffffff;
@@ -178,8 +180,12 @@ p{
   
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
+    .hero-content {
+        background: none !important;
+    }
     .hero-content h1 {
       font-size: 1rem;
+      text-align: center;
     }
     .hero-content p {
       display: block; /* Exibe o parágrafo completo */
