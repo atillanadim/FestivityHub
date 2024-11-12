@@ -92,6 +92,8 @@ p{
     border-radius: 10px;
   }
   
+
+  
   .hero-content h1 {
     font-size: 4rem;
     font-weight: 700;
@@ -100,6 +102,7 @@ p{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
+ 
   .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
@@ -157,12 +160,29 @@ p{
 
 
 
+
+
+  .hero-content .display-4 {
+    font-size: 2rem; /* Ajuste o título para telas pequenas */
+  }
+  
+  .hero-content .btn {
+    padding: 0.75rem 1.5rem; /* Ajuste o tamanho do botão */
+  }
+  
+  @media (min-width: 768px) {
+    .hero-content .display-4 {
+      font-size: 3.5rem; /* Tamanho maior para telas médias e grandes */
+    }
+  }
+  
+/* Ajustes para telas menores */
 @media (max-width: 768px) {
     .hero-content h1 {
-      font-size: 3rem;
+      font-size: 1rem;
     }
-  
     .hero-content p {
+      display: block; /* Exibe o parágrafo completo */
       font-size: 1rem;
     }
   }
