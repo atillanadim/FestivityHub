@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Signika:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Signika" ;
+}
+
+
+h1{
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+.sticky-header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar{
+    background-color: black;
+}
+
+
+.btn{
+    color: aliceblue;
+    background-color:#fd0054 ;
+    border-radius: 10px 25px;
+    border: none;
+    z-index: 3;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#a80038;
+    border-radius: 20px 10px;
+}
+.nav-item:hover{
+    border-radius: 10px 25px;
+    background-color: #3e4a61;
+
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Azul claro com opacidade */
+    z-index: 1;
+}
+
+.container.position-relative {
+    z-index: 2;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-section .carousel,
+  .hero-section .carousel-inner,
+  .hero-section .carousel-item {
+    height: 100%;
+  }
+  
+  .hero-section .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+    z-index: 10;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content .btn {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    text-transform: uppercase;
+  }
+  
+
+/* css do timer*/
+#special-offer {
+    background: linear-gradient(45deg, #fd0054, #a80038);
+  }
+  
+  .countdown-item {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 80px;
+  }
+  
+  .countdown-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+  }
+  
+  .countdown-label {
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+
+
+
+
+.event-card {
+    opacity: 0;
+    transform: translateY(100px) rotate(-10deg);
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.event-card.show {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 3rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+
+
+/*css da pagina contato*/
+
+.contact-section {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.contact-section h1, .contact-section h3, .contact-section h4 {
+    color: #ffffff;
+}
+
+.contact-section .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #ffffff;
+}
+
+.contact-section .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .btn-primary {
+    background-color: #fd0054;
+    border: none;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #a80038;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.social-icon:hover {
+    color: #fd0054;
+}
+
+
+/*css da pagina links uteis*/
+
+.useful-links-section {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.useful-links-section h1, 
+.useful-links-section .lead {
+    color: #ffffff;
+}
+
+.useful-links-section .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.useful-links-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.useful-links-section .card-body {
+    color: #ffffff;
+}
+
+.useful-links-section .card-title {
+    color: #fd0054;
+}
+
+.useful-links-section .btn-primary {
+    background-color: #fd0054;
+    border: none;
+}
+
+.useful-links-section .btn-primary:hover {
+    background-color: #a80038;
+}
